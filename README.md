@@ -1,6 +1,6 @@
-# 🏛️ Dinamite Ink Museum
+# 🏛️ Galeria
 
-Bem-vindo ao **Dinamite Ink Museum**, uma galeria de arte digital interativa e responsiva desenvolvida para exibir portraits exclusivos feitos inteiramente com **caneta esferográfica (Bic)**. Este projeto une a precisão do desenho manual com a modernidade do desenvolvimento web.
+Bem-vindo ao **Galeria do Dinamiteink**, uma galeria de arte digital interativa e responsiva desenvolvida para exibir portraits exclusivos feitos inteiramente com **caneta esferográfica (Bic)**. Este projeto une a precisão do desenho manual com a modernidade do desenvolvimento web.
 
 ---
 
@@ -30,7 +30,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 ## 🖋️ Sobre o Artista
 
 ** "DinamiteInk" **
-Estudante de Análise e Desenvolvimento de Sistemas e Artista. Especializado em retratos realistas utilizando caneta Bic, transformando ferramentas simples em arte complexa.
+Especializado em retratos realistas utilizando caneta Bic, transformando ferramentas simples em arte complexa.
 
 ---
 

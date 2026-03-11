@@ -138,10 +138,11 @@ body {
   text-decoration: none;
   letter-spacing: 2px;
   transition: all 0.3s;
+  border-radius: 10px;
 }
 
 .btn-insta-grande:hover {
-  background: #2c1810;
+  background: #c40700;
   color: #fff;
 }
 
@@ -234,6 +235,7 @@ body {
   background: white;
   color: #1a1a1a;
   padding: 18px 40px;
+   border-radius: 10px;
   border: none;
   width: 100%;
   font-weight: bold;
@@ -245,7 +247,7 @@ body {
 }
 
 .btn-comprar:hover {
-  background: #2c1810;
+  background: #bd0101;
   color: white;
   transform: translateY(-4px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
@@ -271,6 +273,7 @@ body {
 
 .footer-social p {
   margin-bottom: 20px;
+
 }
 
 .insta-link {
@@ -281,6 +284,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 12px 30px;
   transition: 0.3s;
+   border-radius: 10px;
 }
 
 .insta-link:hover {

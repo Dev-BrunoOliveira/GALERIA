@@ -171,9 +171,9 @@ function App() {
                   <p className="modal-desc">{selecionado.descricao}</p>
                   <p className="modal-preco">{selecionado.preco}</p>
 
-                  {/* LINK DO WHATSAPP COM MENSAGEM DINÂMICA */}
+                  {/* LINK DO WHATSAPP COM MENSAGEM DINÂMICA */}  
                   <a
-                    href={`https://wa.me/551152378064?text=${encodeURIComponent(
+                    href={`https://wa.me/message/XDBZLY2ZNU27H1?text=${encodeURIComponent(
                       `Salve Bruno! Vi o desenho do "${selecionado.titulo}" no site DinamiteInk e quero reservar.`,
                     )}`}
                     target="_blank"

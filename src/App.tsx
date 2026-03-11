@@ -79,18 +79,27 @@ function App() {
       preco: "R$ 45",
       img: "img/Walter White.png",
       descricao: "Walter White, o icônico protagonista de 'Breaking Bad', é retratado com maestria em um desenho feito à mão. Com detalhes impressionantes e uma expressão intensa, esta obra captura a complexidade do personagem, tornando-se uma peça essencial para os fãs da série e amantes de arte autoral.",
-    },{
+    },
+    {
       id: 11,
       titulo: "Dexter",
       preco: "R$ 45",
       img: "img/Dexter Morgan.png",
       descricao: "Dexter Morgan, o assassino serial de 'Dexter', é retratado com maestria em um desenho feito à mão. Com detalhes impressionantes e uma expressão intensa, esta obra captura a complexidade do personagem, tornando-se uma peça essencial para os fãs da série e amantes de arte autoral.",
-    },{
+    },
+    {
       id: 12,
       titulo: "Joel The Last of Us",
       preco: "R$ 45",
       img: "img/Joel.png",
       descricao: "Joel da série The Last of Us",
+    },
+    {
+      id: 13,
+      titulo: "Rainha de Maio",
+      preco: "R$ 45",
+      img: "img/Midsommar.png",
+      descricao: "A Rainha de Maio, personagem central do filme 'Midsommar', é retratada com detalhes impressionantes em um desenho feito à mão. Com traços delicados e uma expressão enigmática, esta obra captura a essência mística e perturbadora da personagem, tornando-se uma peça indispensável para os fãs do filme e amantes de arte autoral.",
     },
   ];
 
@@ -128,7 +137,7 @@ function App() {
         ))}
         <div>
           <section className="insta-banner">
-  <h2>CURTIU OS TRAÇOS?</h2>
+  <h2>Curtiu as Artes ? </h2>
   <p>Acompanhe o processo diário das artes e novos portraits no Instagram.</p>
   <a href="https://instagram.com/dinamiteink" target="_blank" className="btn-insta-grande">
     VISITAR @DINAMITEINK
@@ -152,7 +161,7 @@ function App() {
                 className="btn-fechar"
                 onClick={() => setSelecionado(null)}
               >
-                FECHAR [X]
+                X
               </button>
 
               <div className="modal-grid">
@@ -164,7 +173,7 @@ function App() {
 
                   {/* LINK DO WHATSAPP COM MENSAGEM DINÂMICA */}
                   <a
-                    href={`https://wa.me/5511999999999?text=${encodeURIComponent(
+                    href={`https://wa.me/551152378064?text=${encodeURIComponent(
                       `Salve Bruno! Vi o desenho do "${selecionado.titulo}" no site DinamiteInk e quero reservar.`,
                     )}`}
                     target="_blank"

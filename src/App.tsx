@@ -45,6 +45,53 @@ function App() {
       img: "img/50Cent.png",
       descricao: "Série Lendas do Hip Hop. Disponível para print ou original.",
     },
+    {
+      id: 5,
+      titulo: "Snoop Dogg",
+      preco: "R$ 45",
+      img: "img/Snoop.png",
+      descricao: "Série Lendas do Hip Hop. Disponível para print ou original.",
+    },
+    {
+      id: 6,
+      titulo: "Travis",
+      preco: "R$ 45",
+      img: "img/Travis.png",
+      descricao: "Série Lendas do Hip Hop. Disponível para print ou original.",
+    },
+    {
+      id: 8,
+      titulo: "Corra",
+      preco: "R$ 45",
+      img: "img/Corra.png",
+      descricao: "Arte feita baseada na cena iconica do filme Corra",
+    },
+    {
+      id: 9,
+      titulo: "John Wick",
+      preco: "R$ 45",
+      img: "img/John Wick.png",
+      descricao: "John Wick, o lendário assassino interpretado por Keanu Reeves, ganha vida em um retrato detalhado feito à mão. Com traços precisos e sombrios, esta obra captura a intensidade e a aura enigmática do personagem, tornando-se uma peça indispensável para os fãs da série de filmes.",
+    },
+    {
+      id: 10,
+      titulo: "Walter White",
+      preco: "R$ 45",
+      img: "img/Walter White.png",
+      descricao: "Walter White, o icônico protagonista de 'Breaking Bad', é retratado com maestria em um desenho feito à mão. Com detalhes impressionantes e uma expressão intensa, esta obra captura a complexidade do personagem, tornando-se uma peça essencial para os fãs da série e amantes de arte autoral.",
+    },{
+      id: 11,
+      titulo: "Dexter",
+      preco: "R$ 45",
+      img: "img/Dexter Morgan.png",
+      descricao: "Dexter Morgan, o assassino serial de 'Dexter', é retratado com maestria em um desenho feito à mão. Com detalhes impressionantes e uma expressão intensa, esta obra captura a complexidade do personagem, tornando-se uma peça essencial para os fãs da série e amantes de arte autoral.",
+    },{
+      id: 12,
+      titulo: "Joel The Last of Us",
+      preco: "R$ 45",
+      img: "img/Joel.png",
+      descricao: "Joel da série The Last of Us",
+    },
   ];
 
   return (

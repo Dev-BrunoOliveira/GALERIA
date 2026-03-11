@@ -1,4 +1,3 @@
-/* --- RESET E GERAL --- */
 * {
   margin: 0;
   padding: 0;
@@ -9,12 +8,12 @@ body {
   width: 100%;
   overflow-x: hidden;
   font-family: sans-serif;
+  background-color: #000;
 }
 
-/* --- CABEÇALHO (GLASSMORPHISM) --- */
 .museu-header {
   width: 100%;
-  background: rgba(0, 0, 0, 0.4); 
+  background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -54,28 +53,26 @@ body {
   font-style: italic;
 }
 
-/* --- PAREDE DA GALERIA --- */
 .parede {
   display: flex;
-  justify-content: center; 
-  align-items: flex-start; 
+  justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 40px;
   padding: 80px 40px;
   min-height: 80vh;
-  width: 100%; 
-  background-image: 
-    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-    url('img/wallpaper.jfif'); 
-  background-size: cover;      
-  background-position: center; 
-  background-attachment: fixed; 
+  width: 100%;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("img/wallpaper.jfif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-/* --- MOLDURAS (VIDRO) --- */
 .moldura {
   position: relative;
-  background: rgba(255, 255, 255, 0.15); 
+  background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -97,38 +94,37 @@ body {
 }
 
 .obra {
-  width: 100%; 
-  height: 380px; 
+  width: 100%;
+  height: 380px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white; 
-  overflow: hidden; 
-  border: 1px solid #ddd; 
+  background: white;
+  overflow: hidden;
+  border: 1px solid #ddd;
 }
 
 .obra img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain; 
+  object-fit: contain;
 }
 
 .legenda {
   padding-top: 15px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2); 
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   margin-top: 10px;
   color: #fff;
   font-size: large;
 }
 
-/* --- BANNER INSTAGRAM --- */
 .insta-banner {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
   margin: 40px 0;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
 }
 
@@ -144,63 +140,122 @@ body {
   transition: all 0.3s;
 }
 
-/* --- MODAL --- */
+.btn-insta-grande:hover {
+  background: #2c1810;
+  color: #fff;
+}
+
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
   padding: 20px;
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .modal-conteudo {
-  background: #f4f4f4;
-  color: #000;
-  padding: 40px;
-  border: 15px solid #2c1810;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.8),
+    inset 0 0 0 15px #ffffff;
+
+  padding: 60px 40px 40px 40px;
   max-width: 900px;
   width: 100%;
   position: relative;
-  box-shadow: 0 0 50px rgba(0,0,0,1);
-  max-height: 90vh;
-  overflow-y: auto;
+
+  color: #fff;
 }
 
 .modal-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  align-items: center;
 }
 
 .modal-grid img {
   width: 100%;
-  border: 1px solid #000;
+
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.modal-info h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 15px;
+}
+
+.modal-desc {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.modal-preco {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 30px 0;
+  color: #fff;
 }
 
 .btn-fechar {
   position: absolute;
-  top: 10px;
-  right: 15px;
-  background: #2c1810;
+  top: 15px;
+  right: 25px;
+  background: none;
   border: none;
-  color: white;
-  padding: 5px 10px;
-  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.1rem;
   cursor: pointer;
-  z-index: 10;
+  transition: color 0.3s;
 }
 
-/* --- FOOTER PREMIUM (GLASSMORPHISM) --- */
+.btn-fechar:hover {
+  color: #fff;
+}
+
+.btn-comprar {
+  background: white;
+  color: #1a1a1a;
+  padding: 18px 40px;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background: #2c1810;
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
 .museu-footer {
-  margin-top: 100px;
   width: 100%;
   padding: 80px 20px;
-  background: rgba(0, 0, 0, 0.75); 
-  backdrop-filter: blur(15px); 
-  -webkit-backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(15px);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
 }
@@ -209,29 +264,9 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 Colunas no Desktop */
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  align-items: center;
-}
-
-.footer-logo {
-  font-size: 1.8rem;
-  letter-spacing: 6px;
-  margin-bottom: 8px;
-  font-weight: 900;
-}
-
-.footer-brand p {
-  font-style: italic;
-  color: #888;
-  font-size: 0.9rem;
-}
-
-.footer-social p {
-  font-size: 0.65rem;
-  letter-spacing: 3px;
-  margin-bottom: 20px;
-  color: #aaa;
+  text-align: center;
 }
 
 .insta-link {
@@ -239,41 +274,15 @@ body {
   font-weight: bold;
   color: white;
   text-decoration: none;
-  border: 1px solid rgba(255,255,255,0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 12px 30px;
-  transition: all 0.3s ease;
-  display: inline-block;
+  transition: 0.3s;
 }
 
 .insta-link:hover {
   background: white;
-  color: black;
-  box-shadow: 0 0 25px rgba(255,255,255,0.3);
-  transform: translateY(-3px);
+  color: #000;
 }
-
-.footer-info p {
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-  color: #888;
-}
-
-.copyright {
-  margin-top: 15px;
-  font-size: 0.7rem !important;
-  opacity: 0.5;
-}
-
-/* --- RESPONSIVIDADE DO FOOTER --- */
-@media (max-width: 900px) {
-  .footer-content {
-    grid-template-columns: 1fr; /* Vira 1 coluna no tablet/celular */
-    gap: 60px;
-    text-align: center;
-  }
-}
-
-/* --- MEDIA QUERIES (RESPONSIVIDADE UNIFICADA) --- */
 
 @media (max-width: 1024px) {
   .header-title {
@@ -296,26 +305,31 @@ body {
   }
 
   .moldura {
-    width: 85%;
+    width: 90%;
     max-width: 320px;
     margin: 0 auto;
   }
-
   .obra {
     height: 320px;
   }
 
   .modal-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
-
   .modal-conteudo {
-    padding: 20px;
-    border-width: 10px;
+    padding: 40px 20px 20px 20px;
+    box-shadow:
+      0 15px 30px rgba(0, 0, 0, 0.7),
+      inset 0 0 0 10px #2c1810;
+  }
+  .modal-info h2 {
+    font-size: 2rem;
   }
 
   .footer-content {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 }
 
@@ -324,11 +338,6 @@ body {
     font-size: 1.5rem;
     letter-spacing: 2px;
   }
-  
-  .header-top {
-    letter-spacing: 4px;
-  }
-
   .btn-insta-grande {
     padding: 12px 20px;
     font-size: 0.8rem;

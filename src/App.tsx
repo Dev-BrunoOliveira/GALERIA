@@ -139,7 +139,7 @@ function App() {
       </AnimatePresence>
 
       {/* RODAPÉ INSTITUCIONAL */}
-      <footer className="museu-footer">
+   <footer className="museu-footer">
   <div className="footer-content">
     <div className="footer-brand">
       <h2 className="footer-logo">DINAMITE INK</h2>
@@ -149,7 +149,7 @@ function App() {
     <div className="footer-social">
       <p>SIGA O PROCESSO NO INSTAGRAM</p>
       <a href="https://instagram.com/dinamiteink" target="_blank" className="insta-link">
-        @DINAMITEINK
+        @dinamiteink
       </a>
     </div>
 

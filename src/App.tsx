@@ -49,9 +49,13 @@ function App() {
 
   return (
     <div className="galeria-container">
-      <header className="museu-header">
-        <h1>PORTRAIT MAKE WITH PEN</h1>
-      </header>
+     <header className="museu-header">
+  <div className="header-overlay">
+    <p className="header-top">ORIGINAL PORTRAITS</p>
+    <h1 className="header-title">DINAMITE INK</h1>
+    <p className="header-bottom">MADE WITH BIC PEN</p>
+  </div>
+</header>
 
       <main className="parede">
         {desenhos.map((art) => (
@@ -65,6 +69,7 @@ function App() {
           >
             <div className="obra">
               <img src={art.img} alt={art.titulo} />
+              
             </div>
             <div className="legenda">
               <p>
@@ -74,6 +79,15 @@ function App() {
             </div>
           </motion.div>
         ))}
+        <div>
+          <section className="insta-banner">
+  <h2>CURTIU OS TRAÇOS?</h2>
+  <p>Acompanhe o processo diário das artes e novos portraits no Instagram.</p>
+  <a href="https://instagram.com/dinamiteink" target="_blank" className="btn-insta-grande">
+    VISITAR @DINAMITEINK
+  </a>
+</section>
+        </div>
       </main>
 
       {/* MODAL INTERATIVO */}
@@ -126,18 +140,25 @@ function App() {
 
       {/* RODAPÉ INSTITUCIONAL */}
       <footer className="museu-footer">
-        <p>© 2026 DINAMITE INK - ART & TATTOO</p>
-        <div className="social-links">
-          <a
-            href="https://instagram.com/dinamiteink"
-            target="_blank"
-            rel="noreferrer"
-          >
-            INSTAGRAM
-          </a>
-          <span>|</span>
-        </div>
-      </footer>
+  <div className="footer-content">
+    <div className="footer-brand">
+      <h2 className="footer-logo">DINAMITE INK</h2>
+      <p>Original Portraits made with Bic Pen</p>
+    </div>
+
+    <div className="footer-social">
+      <p>SIGA O PROCESSO NO INSTAGRAM</p>
+      <a href="https://instagram.com/dinamiteink" target="_blank" className="insta-link">
+        @DINAMITEINK
+      </a>
+    </div>
+
+    <div className="footer-info">
+      <p>SÃO PAULO - BRASIL</p>
+      <p className="copyright">© 2026 - Desenvolvido para Colecionadores</p>
+    </div>
+  </div>
+</footer>
     </div>
   );
 }

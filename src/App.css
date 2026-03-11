@@ -56,18 +56,170 @@
   object-fit: contain; 
 }
 
-.museu-header h1 {
-  font-size: 3rem;
-  letter-spacing: 12px; 
+.museu-header {
+  width: 100%;
+  /* Removemos o cinza sólido e colocamos o efeito de vidro */
+  background: rgba(0, 0, 0, 0.4); 
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.header-overlay {
+  text-align: center;
+}
+
+.header-top {
+  font-size: 0.8rem;
+  letter-spacing: 10px;
+  color: #aaa;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.header-title {
+  font-size: 4.5rem; 
+  letter-spacing: 18px;
   text-transform: uppercase;
-  color: #f3f3f3; 
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  color: #fff;
+  font-weight: 900;
+  margin: 0;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.header-bottom {
+  font-size: 0.9rem;
+  letter-spacing: 6px;
+  color: #888;
+  margin-top: 15px;
+  font-family: 'Serif', Georgia;
+  font-style: italic;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 2.5rem;
+    letter-spacing: 8px;
+  }
 }
 
 .legenda {
   padding-top: 15px;
   border-top: 1px solid #eee; 
   margin-top: 10px;
+}
+
+.insta-banner {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px); /* Efeito de vidro por cima do Van Gogh */
+  padding: 60px 20px;
+  text-align: center;
+  margin: 40px 0;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  color: white;
+}
+
+.btn-insta-grande {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 40px;
+  background: white;
+  color: #1a1a1a;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+}
+
+.btn-insta-grande:hover {
+  background: #2c1810;
+  color: white;
+  transform: translateY(-5px);
+}
+.instagram-float:hover {
+  transform: scale(1.1);
+}
+
+.museu-footer {
+  margin-top: 100px;
+  width: 100%;
+  padding: 80px 20px;
+  /* Efeito de Vidro: Deixa passar a cor do fundo com desfoque */
+  background: rgba(0, 0, 0, 0.7); 
+  backdrop-filter: blur(15px); 
+  -webkit-backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Divide em 3 colunas */
+  gap: 40px;
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  letter-spacing: 8px;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  font-family: 'Serif', Georgia;
+  font-style: italic;
+  color: #aaa;
+}
+
+.footer-social p {
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  color: #888;
+}
+
+.insta-link {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.insta-link:hover {
+  background: white;
+  color: black;
+  box-shadow: 0 0 20px rgba(255,255,255,0.4);
+}
+
+.footer-info p {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  margin-top: 20px;
+  color: #555;
+}
+
+/* Ajuste para Celular */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
 }
 
 .overlay {

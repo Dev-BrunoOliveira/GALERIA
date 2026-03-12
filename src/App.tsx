@@ -20,7 +20,7 @@ function App() {
       preco: "R$ 45",
       img: "img/2PAC.png",
       descricao:
-        "Desenho original feito à mão com técnica de hachura em caneta esferográfica.",
+        "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
     {
       id: 2,
@@ -28,7 +28,7 @@ function App() {
       preco: "R$ 45",
       img: "img/BIG.png",
       descricao:
-        "Retrato detalhado do Biggie Smalls. Estudo de sombras e contraste.",
+        "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
     {
       id: 3,
@@ -36,35 +36,35 @@ function App() {
       preco: "R$ 45",
       img: "img/Ice Cube.png",
       descricao:
-        "Expressão e realismo em preto e branco. Arte autoral Dinamite Ink.",
+        "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
     {
       id: 4,
       titulo: "50 Cent",
       preco: "R$ 45",
       img: "img/50Cent.png",
-      descricao: "Série Lendas do Hip Hop. Disponível para print ou original.",
+      descricao: "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
     {
       id: 5,
       titulo: "Snoop Dogg",
       preco: "R$ 45",
       img: "img/Snoop.png",
-      descricao: "Série Lendas do Hip Hop. Disponível para print ou original.",
+      descricao: "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
     {
       id: 6,
       titulo: "Travis",
       preco: "R$ 45",
       img: "img/Travis.png",
-      descricao: "Série Lendas do Hip Hop. Disponível para print ou original.",
+      descricao: "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
     {
       id: 8,
       titulo: "Corra",
       preco: "R$ 45",
       img: "img/Corra.png",
-      descricao: "Arte feita baseada na cena iconica do filme Corra",
+      descricao: "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
     {
       id: 9,
@@ -72,15 +72,15 @@ function App() {
       preco: "R$ 45",
       img: "img/John Wick.png",
       descricao:
-        "John Wick, o lendário assassino interpretado por Keanu Reeves, ganha vida em um retrato detalhado feito à mão. Com traços precisos e sombrios, esta obra captura a intensidade e a aura enigmática do personagem, tornando-se uma peça indispensável para os fãs da série de filmes.",
-    },
+          "John Wick, o lendário assassino interpretado por Keanu Reeves, ganha vida em um retrato detalhado feito à mão. Com traços precisos e sombrios, esta obra captura a intensidade e a aura enigmática do personagem, tornando-se uma peça indispensável para os fãs da série de filmes.Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
+      },
     {
       id: 10,
       titulo: "Walter White",
       preco: "R$ 45",
       img: "img/Walter White.png",
       descricao:
-        "Walter White, o icônico protagonista de 'Breaking Bad', é retratado com maestria em um desenho feito à mão. Com detalhes impressionantes e uma expressão intensa, esta obra captura a complexidade do personagem, tornando-se uma peça essencial para os fãs da série e amantes de arte autoral.",
+        "Walter White, o icônico protagonista de 'Breaking Bad', é retratado com maestria em um desenho feito à mão. Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
     {
       id: 11,
@@ -88,14 +88,14 @@ function App() {
       preco: "R$ 45",
       img: "img/Dexter Morgan.png",
       descricao:
-        "Dexter Morgan, o assassino serial de 'Dexter', é retratado com maestria em um desenho feito à mão. Com detalhes impressionantes e uma expressão intensa, esta obra captura a complexidade do personagem, tornando-se uma peça essencial para os fãs da série e amantes de arte autoral.",
+        "Dexter Morgan, o assassino serial de 'Dexter', é retratado com maestria em um desenho feito à mão. Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
     {
       id: 12,
       titulo: "Joel The Last of Us",
       preco: "R$ 45",
       img: "img/Joel.png",
-      descricao: "Joel da série The Last of Us",
+      descricao: "Joel da série The Last of Us. Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
     {
       id: 13,
@@ -103,7 +103,7 @@ function App() {
       preco: "R$ 45",
       img: "img/Midsommar.png",
       descricao:
-        "A Rainha de Maio, personagem central do filme 'Midsommar', é retratada com detalhes impressionantes em um desenho feito à mão. Com traços delicados e uma expressão enigmática, esta obra captura a essência mística e perturbadora da personagem, tornando-se uma peça indispensável para os fãs do filme e amantes de arte autoral.",
+        "A Rainha de Maio, personagem central do filme 'Midsommar', é retratada com detalhes impressionantes em um desenho feito à mão. Com traços delicados e uma expressão enigmática, esta obra captura a essência mística e perturbadora da personagem, tornando-se uma peça indispensável para os fãs do filme e amantes de arte autoral.Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
   ];
 

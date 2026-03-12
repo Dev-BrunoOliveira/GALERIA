@@ -71,21 +71,24 @@ function App() {
       titulo: "John Wick",
       preco: "R$ 45",
       img: "img/John Wick.png",
-      descricao: "John Wick, o lendário assassino interpretado por Keanu Reeves, ganha vida em um retrato detalhado feito à mão. Com traços precisos e sombrios, esta obra captura a intensidade e a aura enigmática do personagem, tornando-se uma peça indispensável para os fãs da série de filmes.",
+      descricao:
+        "John Wick, o lendário assassino interpretado por Keanu Reeves, ganha vida em um retrato detalhado feito à mão. Com traços precisos e sombrios, esta obra captura a intensidade e a aura enigmática do personagem, tornando-se uma peça indispensável para os fãs da série de filmes.",
     },
     {
       id: 10,
       titulo: "Walter White",
       preco: "R$ 45",
       img: "img/Walter White.png",
-      descricao: "Walter White, o icônico protagonista de 'Breaking Bad', é retratado com maestria em um desenho feito à mão. Com detalhes impressionantes e uma expressão intensa, esta obra captura a complexidade do personagem, tornando-se uma peça essencial para os fãs da série e amantes de arte autoral.",
+      descricao:
+        "Walter White, o icônico protagonista de 'Breaking Bad', é retratado com maestria em um desenho feito à mão. Com detalhes impressionantes e uma expressão intensa, esta obra captura a complexidade do personagem, tornando-se uma peça essencial para os fãs da série e amantes de arte autoral.",
     },
     {
       id: 11,
       titulo: "Dexter",
       preco: "R$ 45",
       img: "img/Dexter Morgan.png",
-      descricao: "Dexter Morgan, o assassino serial de 'Dexter', é retratado com maestria em um desenho feito à mão. Com detalhes impressionantes e uma expressão intensa, esta obra captura a complexidade do personagem, tornando-se uma peça essencial para os fãs da série e amantes de arte autoral.",
+      descricao:
+        "Dexter Morgan, o assassino serial de 'Dexter', é retratado com maestria em um desenho feito à mão. Com detalhes impressionantes e uma expressão intensa, esta obra captura a complexidade do personagem, tornando-se uma peça essencial para os fãs da série e amantes de arte autoral.",
     },
     {
       id: 12,
@@ -99,19 +102,20 @@ function App() {
       titulo: "Rainha de Maio",
       preco: "R$ 45",
       img: "img/Midsommar.png",
-      descricao: "A Rainha de Maio, personagem central do filme 'Midsommar', é retratada com detalhes impressionantes em um desenho feito à mão. Com traços delicados e uma expressão enigmática, esta obra captura a essência mística e perturbadora da personagem, tornando-se uma peça indispensável para os fãs do filme e amantes de arte autoral.",
+      descricao:
+        "A Rainha de Maio, personagem central do filme 'Midsommar', é retratada com detalhes impressionantes em um desenho feito à mão. Com traços delicados e uma expressão enigmática, esta obra captura a essência mística e perturbadora da personagem, tornando-se uma peça indispensável para os fãs do filme e amantes de arte autoral.",
     },
   ];
 
   return (
     <div className="galeria-container">
-     <header className="museu-header">
-  <div className="header-overlay">
-    <p className="header-top">ORIGINAL PORTRAITS</p>
-    <h1 className="header-title">DINAMITE INK</h1>
-    <p className="header-bottom">MADE WITH BIC PEN</p>
-  </div>
-</header>
+      <header className="museu-header">
+        <div className="header-overlay">
+          <p className="header-top">ORIGINAL PORTRAITS</p>
+          <h1 className="header-title">DINAMITE INK</h1>
+          <p className="header-bottom">MADE WITH BIC PEN</p>
+        </div>
+      </header>
 
       <main className="parede">
         {desenhos.map((art) => (
@@ -125,7 +129,6 @@ function App() {
           >
             <div className="obra">
               <img src={art.img} alt={art.titulo} />
-              
             </div>
             <div className="legenda">
               <p>
@@ -137,16 +140,22 @@ function App() {
         ))}
         <div>
           <section className="insta-banner">
-  <h2>Curtiu as Artes ? </h2>
-  <p>Acompanhe o processo diário das artes e novos portraits no Instagram.</p>
-  <a href="https://instagram.com/dinamiteink" target="_blank" className="btn-insta-grande">
-    VISITAR @DINAMITEINK
-  </a>
-</section>
+            <h2>Curtiu as Artes ? </h2>
+            <p>
+              Acompanhe o processo diário das artes e novos portraits no
+              Instagram.
+            </p>
+            <a
+              href="https://instagram.com/dinamiteink"
+              target="_blank"
+              className="btn-insta-grande"
+            >
+              VISITAR @DINAMITEINK
+            </a>
+          </section>
         </div>
       </main>
 
-      {/* MODAL INTERATIVO */}
       <AnimatePresence>
         {selecionado && (
           <div className="overlay" onClick={() => setSelecionado(null)}>
@@ -171,7 +180,6 @@ function App() {
                   <p className="modal-desc">{selecionado.descricao}</p>
                   <p className="modal-preco">{selecionado.preco}</p>
 
-                  {/* LINK DO WHATSAPP COM MENSAGEM DINÂMICA */}  
                   <a
                     href={`https://wa.me/message/XDBZLY2ZNU27H1?text=${encodeURIComponent(
                       `Salve Bruno! Vi o desenho do "${selecionado.titulo}" no site DinamiteInk e quero reservar.`,
@@ -194,27 +202,32 @@ function App() {
         )}
       </AnimatePresence>
 
-      {/* RODAPÉ INSTITUCIONAL */}
-   <footer className="museu-footer">
-  <div className="footer-content">
-    <div className="footer-brand">
-      <h2 className="footer-logo">DINAMITE INK</h2>
-      <p>Original Portraits made with Bic Pen</p>
-    </div>
+      <footer className="museu-footer">
+        <div className="footer-content">
+          <div className="footer-brand">
+            <h2 className="footer-logo">DINAMITE INK</h2>
+            <p>Original Portraits made with Bic Pen</p>
+          </div>
 
-    <div className="footer-social">
-      <p>SIGA O PROCESSO NO INSTAGRAM</p>
-      <a href="https://instagram.com/dinamiteink" target="_blank" className="insta-link">
-        @dinamiteink
-      </a>
-    </div>
+          <div className="footer-social">
+            <p>SIGA O PROCESSO NO INSTAGRAM</p>
+            <a
+              href="https://instagram.com/dinamiteink"
+              target="_blank"
+              className="insta-link"
+            >
+              @dinamiteink
+            </a>
+          </div>
 
-    <div className="footer-info">
-      <p>SÃO PAULO - BRASIL</p>
-      <p className="copyright">© 2026 - Desenvolvido para Colecionadores</p>
-    </div>
-  </div>
-</footer>
+          <div className="footer-info">
+            <p>SÃO PAULO - BRASIL</p>
+            <p className="copyright">
+              © 2026 - Desenvolvido para Colecionadores
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

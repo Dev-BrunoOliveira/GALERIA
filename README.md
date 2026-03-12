@@ -33,9 +33,3 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 Especializado em retratos realistas utilizando caneta Bic, transformando ferramentas simples em arte complexa.
 
 ---
-
-## 🚀 Como rodar o projeto localmente
-
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/seu-usuario/dinamite-ink-museum.git](https://github.com/seu-usuario/dinamite-ink-museum.git)

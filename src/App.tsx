@@ -113,13 +113,14 @@ function App() {
         "A Rainha de Maio, personagem central do filme 'Midsommar', é retratada com detalhes impressionantes em um desenho feito à mão. Com traços delicados e uma expressão enigmática, esta obra captura a essência mística e perturbadora da personagem, tornando-se uma peça indispensável para os fãs do filme e amantes de arte autoral.Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
      {
-      id: 14,
-      titulo: "Bad Bunny",
+      id: 15,
+      titulo: "Neymar",
       preco: "R$ 45",
-      img: "img/Bad Bunny.jpg",
+      img: "img/Neymar.png",
       descricao:
-        "Bad Bunny, o icônico artista de música latina, é retratado com maestria em um desenho feito à mão. Com traços precisos e uma expressão enigmática, esta obra captura a essência mística e perturbadora da personagem, tornando-se uma peça indispensável para os fãs do filme e amantes de arte autoral.Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
+        "Neymar, o icônico jogador de futebol, é retratado com maestria em um desenho feito à mão. Com traços precisos e uma expressão enigmática, esta obra captura a essência mística e perturbadora da personagem, tornando-se uma peça indispensável para os fãs do filme e amantes de arte autoral.Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
+
   ];
 
   return (

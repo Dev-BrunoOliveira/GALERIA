@@ -5,7 +5,7 @@ import "./App.css";
 interface Desenho {
   id: number;
   titulo: string;
-  preco: string;
+  status: string; // Alterado de preco para status
   img: string;
   descricao: string;
 }
@@ -17,7 +17,7 @@ function App() {
     {
       id: 1,
       titulo: "2PAC",
-      preco: "R$ 45",
+      status: "Disponível",
       img: "img/2PAC.png",
       descricao:
         "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
@@ -25,7 +25,7 @@ function App() {
     {
       id: 2,
       titulo: "Notorius B.I.G.",
-      preco: "R$ 45",
+      status: "Disponível",
       img: "img/BIG.png",
       descricao:
         "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
@@ -33,7 +33,7 @@ function App() {
     {
       id: 3,
       titulo: "Ice Cube",
-      preco: "R$ 45",
+      status: "Disponível",
       img: "img/Ice Cube.png",
       descricao:
         "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
@@ -41,86 +41,94 @@ function App() {
     {
       id: 4,
       titulo: "50 Cent",
-      preco: "R$ 45",
+      status: "Disponível",
       img: "img/50Cent.png",
-      descricao: "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
+      descricao:
+        "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
     {
       id: 5,
       titulo: "Snoop Dogg",
-      preco: "R$ 45",
+      status: "Disponível",
       img: "img/Snoop.png",
-      descricao: "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
+      descricao:
+        "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
     {
       id: 6,
       titulo: "Travis",
-      preco: "R$ 45",
+      status: "Disponível",
       img: "img/Travis.png",
-      descricao: "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
+      descricao:
+        "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
     {
       id: 7,
       titulo: "Kendrick Lamar",
-      preco: "R$ 45",
+      status: "Disponível",
       img: "img/Kendrick.jpg",
-      descricao: "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
+      descricao:
+        "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
     {
       id: 8,
-      titulo: "Corra",
-      preco: "R$ 45",
-      img: "img/Corra.png",
-      descricao: "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
+      titulo: "John Wick",
+      status: "Disponível",
+      img: "img/John Wick.png",
+      descricao:
+        "John Wick, o lendário assassino interpretado por Keanu Reeves, ganha vida em um retrato detalhado feito à mão. Com traços precisos e sombrios, esta obra captura a intensidade e a aura enigmática do personagem. Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
     {
       id: 9,
-      titulo: "John Wick",
-      preco: "R$ 45",
-      img: "img/John Wick.png",
+      titulo: "Corra",
+      status: "Disponível",
+      img: "img/Corra.png",
       descricao:
-          "John Wick, o lendário assassino interpretado por Keanu Reeves, ganha vida em um retrato detalhado feito à mão. Com traços precisos e sombrios, esta obra captura a intensidade e a aura enigmática do personagem, tornando-se uma peça indispensável para os fãs da série de filmes.Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
-      },
+        "Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
+    },
+
     {
       id: 10,
-      titulo: "Walter White",
-      preco: "R$ 45",
-      img: "img/Walter White.png",
+      titulo: "Rainha de Maio",
+      status: "Disponível",
+      img: "img/Midsommar.png",
       descricao:
-        "Walter White, o icônico protagonista de 'Breaking Bad', é retratado com maestria em um desenho feito à mão. Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
+        "A Rainha de Maio, personagem central do filme 'Midsommar', é retratada com detalhes impressionantes. Com traços delicados e uma expressão enigmática, esta obra captura a essência mística e perturbadora da personagem. Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
+
     {
       id: 11,
       titulo: "Dexter",
-      preco: "R$ 45",
+      status: "Disponível",
       img: "img/Dexter Morgan.png",
       descricao:
-        "Dexter Morgan, o assassino serial de 'Dexter', é retratado com maestria em um desenho feito à mão. Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
+        "Dexter Morgan, o assassino serial de 'Dexter', é retratado com maestria em um desenho feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
     {
       id: 12,
       titulo: "Joel The Last of Us",
-      preco: "R$ 45",
+      status: "Disponível",
       img: "img/Joel.png",
-      descricao: "Joel da série The Last of Us. Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
+      descricao:
+        "Joel da série The Last of Us. Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
     {
       id: 13,
-      titulo: "Rainha de Maio",
-      preco: "R$ 45",
-      img: "img/Midsommar.png",
+      titulo: "Walter White",
+      status: "Disponível",
+      img: "img/Walter White.png",
       descricao:
-        "A Rainha de Maio, personagem central do filme 'Midsommar', é retratada com detalhes impressionantes em um desenho feito à mão. Com traços delicados e uma expressão enigmática, esta obra captura a essência mística e perturbadora da personagem, tornando-se uma peça indispensável para os fãs do filme e amantes de arte autoral.Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
-    },
-     {
-      id: 15,
-      titulo: "Neymar",
-      preco: "R$ 45",
-      img: "img/Neymar.png",
-      descricao:
-        "Neymar, o icônico jogador de futebol, é retratado com maestria em um desenho feito à mão. Com traços precisos e uma expressão enigmática, esta obra captura a essência mística e perturbadora da personagem, tornando-se uma peça indispensável para os fãs do filme e amantes de arte autoral.Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
+        "Walter White, o icônico protagonista de 'Breaking Bad', é retratado com maestria em um desenho feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
 
+    {
+      id: 14,
+      titulo: "Neymar",
+      status: "Disponível",
+      img: "img/Neymar.png",
+      descricao:
+        "Neymar Jr, um dos maiores ícones do futebol mundial, retratado em detalhes através da técnica de hachura. Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
+    },
   ];
 
   return (
@@ -150,26 +158,26 @@ function App() {
               <p>
                 <strong>{art.titulo}</strong>
               </p>
-              <p>{art.preco}</p>
+              <p>{art.status}</p>
             </div>
           </motion.div>
         ))}
-        <div>
-          <section className="insta-banner">
-            <h2>Curtiu as Artes ? </h2>
-            <p>
-              Acompanhe o processo diário das artes e novos portraits no
-              Instagram.
-            </p>
-            <a
-              href="https://instagram.com/dinamiteink"
-              target="_blank"
-              className="btn-insta-grande"
-            >
-              VISITAR @DINAMITEINK
-            </a>
-          </section>
-        </div>
+
+        <section className="insta-banner">
+          <h2>Curtiu as Artes ? </h2>
+          <p>
+            Acompanhe o processo diário das artes e novos portraits no
+            Instagram.
+          </p>
+          <a
+            href="https://instagram.com/dinamiteink"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-insta-grande"
+          >
+            VISITAR @DINAMITEINK
+          </a>
+        </section>
       </main>
 
       <AnimatePresence>
@@ -194,7 +202,7 @@ function App() {
                 <div className="modal-info">
                   <h2>{selecionado.titulo}</h2>
                   <p className="modal-desc">{selecionado.descricao}</p>
-                  <p className="modal-preco">{selecionado.preco}</p>
+                  <p className="modal-preco">{selecionado.status}</p>
 
                   <a
                     href={`https://wa.me/message/XDBZLY2ZNU27H1?text=${encodeURIComponent(
@@ -230,6 +238,7 @@ function App() {
             <a
               href="https://instagram.com/dinamiteink"
               target="_blank"
+              rel="noopener noreferrer"
               className="insta-link"
             >
               @dinamiteink

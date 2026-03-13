@@ -5,7 +5,7 @@ import "./App.css";
 interface Desenho {
   id: number;
   titulo: string;
-  status: string; // Alterado de preco para status
+  status: string; 
   img: string;
   descricao: string;
 }
@@ -248,7 +248,7 @@ function App() {
           <div className="footer-info">
             <p>SÃO PAULO - BRASIL</p>
             <p className="copyright">
-              © 2026 - Desenvolvido para Colecionadores
+              © 2026 - Desenvolvido para Colecionadores de Artes Autenticas
             </p>
           </div>
         </div>

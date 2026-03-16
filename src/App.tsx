@@ -137,6 +137,14 @@ function App() {
       descricao:
         "Bad Bunny, um dos maiores ícones da música urbana, retratado em detalhes através da técnica de hachura. Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
+    {
+      id: 16,
+      titulo: "The Rock",
+      status: "Disponível",
+      img: "img/Adam Black.png",
+      descricao:
+        "The Rock, um dos maiores ícones do entretenimento, retratado em detalhes através da técnica de hachura. Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
+    },
   ];
 
   return (

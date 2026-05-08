@@ -145,6 +145,14 @@ function App() {
       descricao:
         "The Rock, um dos maiores ícones do entretenimento, retratado em detalhes através da técnica de hachura. Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
     },
+    {
+      id: 17,
+      titulo: "Leblon James",
+      status: "Disponível",
+      img: "img/Lebron James.png",
+      descricao:
+        "Lebron James, um dos maiores ícones do basquete, retratado em detalhes através da técnica de hachura. Desenho original feito à mão com técnica de hachura em caneta esferográfica, Impressão em papel Glossy Premium, tamanho A4 (21x30 cm).",
+    },
   ];
 
   return (
